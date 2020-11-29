@@ -1,0 +1,46 @@
++++Konfigurasi htaccess+++
+sudo vim /etc/apache2/apache2.conf
+	::ganti::
+<Directory /var/www/>
+     Options Indexes FollowSymLinks
+     AllowOverride None
+     Require all granted
+</Directory> 
+	::menjadi::
+     AllowOverride All
+  ::cek::
+sudo nano /etc/apache2/sites-available/000-default.conf
+  ::aktifkan ModRewrite::
+sudo a2enmod rewrite
+  ::restart apache::
+sudo service apache2 restart
+
+http://www.andrianext.web.id/2017/02/mengaktifkan-htaccess-apache-di-linux.html
+
+
++++Error remote IP berubah+++
+https://www.digitalocean.com/community/questions/warning-remote-host-identification-has-changed
+
+
++++Mysql+++
+sudo service mysql status
+sudo service mysql stop
+sudo service mysql start
+
+https://phoenixnap.com/kb/how-to-install-mysql-on-ubuntu-18-04
+
+
++++Apache+++
+sudo systemctl restart apache2
+sudo systemctl status apache2
+
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-ubuntu-18-04
+
++++phpmyadmin+++
+::No Previleges::
+
+sudo mysql
+GRANT ALL on *.* to 'username'@'localhost' identified by 'password';
+flush privileges;
+
+https://stackoverflow.com/questions/11755214/phpmyadmin-mysql-no-privileges
