@@ -1,0 +1,22 @@
+Install:
+	sudo apt install virtualbox
+
+Konfigurasi:
+	Download Virtualbox Extension Pack
+		https://download.virtualbox.org/virtualbox/5.1.0/
+
+	Install Virtualbox Extension Pack
+		preference > ekstension > ...
+
+	Add Your User to vboxusers Group
+		$ sudo usermod -aG vboxusers tri
+			atau
+		$ sudo gpasswd -a yourusername vboxusers
+		$ groups yourusername
+
+	Reboot komputer
+	Enable USB Controller and Add New USB filter
+	Access USB from VirtualBox
+
+Referensi:
+	https://www.linuxbabe.com/virtualbox/access-usb-from-virtualbox-guest-os

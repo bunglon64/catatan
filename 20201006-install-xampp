@@ -1,0 +1,15 @@
+Download file:
+	https://www.apachefriends.org/download.html
+
+Ubah permission:
+	$ cd/Downloads
+	$ chmod 755 xampp-linux-*-installer.run
+
+Run:
+	sudo ./xampp-linux-*-installer.run
+
+Installed:
+	/opt/lampp/
+
+Referensi:
+	https://www.apachefriends.org/faq_linux.html

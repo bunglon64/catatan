@@ -1,0 +1,29 @@
+Unduh bahan:
+	https://developer.android.com/studio?hl=id#downloads
+
+Ekstrak:
+	$ /opt/ tar xf /home/tri/Documents/software/app/linux/android-studio-ide-193.6626763-linux.tar.gz
+	
+Menjalankan:
+	$ /opt/android-studio/bin/studio.sh
+	
+Location folder emulator (Setup Type: Standard)
+	SDK Folder: # /root/Android/Sdk
+		    $ /home/tri/Android/Sdk
+	JDK Folder: $ /opt/android-studio/jre
+	
+Location projet android:
+	# /root/AndroidStudioProjects/MyApplication
+	$ /home/tri/AndroidStudioProject/
+
+Run emlator: 
+	$ cd ~/Android/Sdk/emulator
+	  ./emulator -list-avds
+	  ./emulator @Pixel_2_API_29
+	
+Refferensi:
+	https://www.petanikode.com/android-studio-linux/
+	https://jagongoding.com/android/menjalankan-emulator-android-tanpa-membuka-android-studio/
+
+
+

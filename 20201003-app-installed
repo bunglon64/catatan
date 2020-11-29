@@ -1,0 +1,118 @@
+-=BUILT IN=-
+
+sudo apt install cmatrix
+sudo apt install composer
+sudo apt install ctorrent
+sudo apt install darktable
+(-)sudo apt install ffmepg
+sudo apt install filezilla
+sudo apt install gimp
+sudo apt install inkscape
+sudo apt install libreoffice
+(-)sudo apt install lshw
+sudo apt install neofetch
+sudo apt install net-tools
+sudo apt install nload
+(-)sudo apt install python3-pip
+sudo apt install stopwatch
+sudo apt install telnet
+sudo apt install traceroute
+sudo apt install ttf-mscorefonts-installer 
+apt install unrar
+sudo apt install virtualbox
+	-konfigurasi-
+	unduh:
+		https://download.virtualbox.org/virtualbox/'versi vm'
+	install ekstensi di vm
+		preference > ekstension > ...
+	tambahkan user
+		sudo usermod -aG vboxusers tri
+			atau
+		sudo gpasswd -a yourusername vboxusers
+	lihat perubahan
+		groups yourusername
+	reboot komputer
+
+	https://www.linuxbabe.com/virtualbox/access-usb-from-virtualbox-guest-os
+
+sudo apt install vlc
+sudo apt install youtube-dl
+	hampir:
+	https://itsfoss.com/add-apt-repository-command-not-found/
+	https://itsfoss.com/download-youtube-videos-ubuntu/
+
+
+
+
+-=EKSTERNAL=-
+
+android-studio
+	locate: /opt/android-studio
+	run: # /opt/android-studio/bin/studio.sh
+
+	location folder emulator: Setup Type: Standard
+		SDK Folder: /root/Android/Sdk
+		JDK Folder: /opt/android-studio/jre
+	
+	location projet android:
+		/root/AndroidStudioProjects/MyApplication
+
+	run emlator: 
+		cd ~/Android/Sdk/emulator
+		./emulator -list-avds
+		./emulator @Pixel_2_API_29
+	
+	Refferensi:
+		https://www.petanikode.com/android-studio-linux/
+		https://jagongoding.com/android/menjalankan-emulator-android-tanpa-membuka-android-studio/
+
+chrome
+	sudo apt install ./google-chrome-stable_current_amd64.deb
+
+flutter
+	install flutter:
+		~$apps/ tar xf ~/Documents/software/app/linux/flutter_linux_1.22.0-stable.tar.xz
+	path android & flutter:
+		$ nano ~/.bashrc
+	tambah path dipaling bawah:
+		export ANDROID_HOME=$HOME/Android/Sdk
+		export PATH=$PATH:$ANDROID_HOME/tools/
+		export PATH=$PATH:~/apps/flutter/bin/
+	check:
+		$ android --version
+		$ flutter
+
+lightworks
+	sudo apt install ./lightworks_2020.1.1_r124942.deb
+
+
+postman
+	sudo su
+	cd Downloads
+	tar -xzf Postman-linux-x64-7.34.0.tar.gz
+	mv Postman /opt/apps
+	
+	run:
+	ln -s /opt/apps/Postman/Postman /usr/local/bin/postman
+
+
+(-)spotify
+	curl -sS https://download.spotify.com/debian/pubkey.gpg | sudo apt-key add - 
+	echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+	sudo apt-get update && sudo apt-get install spotify-client
+
+(-)spotify-downloader
+	https://github.com/ritiek/spotify-downloader
+
+visual-studio-code
+	sudo apt install ./code_1.48.2-1598353430_amd64.deb
+		ekstensi:	
+			flutter
+			dart
+
+xampp
+	chmod 755 xampp-linux-*-installer.run
+	sudo ./xampp-linux-*-installer.run
+
+(-)zoom
+	apt install ./zoom_amd64.deb

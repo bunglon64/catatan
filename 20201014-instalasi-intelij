@@ -1,0 +1,11 @@
+Download file
+https://www.jetbrains.com/idea/download/#section=linux
+
+Step
+cd /opt/
+sudo tar -xvzf ~/Downloads/ideaIC-2020.2.tar.gz
+sudo mv idea-IC-202.6397.94 idea
+/home/tri/apps/idea/bin/idea.sh
+
+Sumber
+https://www.javahelps.com/2015/04/install-intellij-idea-on-ubuntu.html

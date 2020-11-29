@@ -1,0 +1,38 @@
+Install android studio untuk manfaatkan emulatornya
+
+Tambahkan path:
+	$ nano ~/.bashrc
+	
+	Tambahkan dipaling bawah:
+	export ANDROID_HOME=$HOME/Android/Sdk
+	export PATH=$PATH:$ANDROID_HOME/tools
+
+Check:
+	$ android --version
+
+
+
+
+-=Install flutter=-
+
+Yang dibutuhkan:
+	$sudo apt install curl git unzip xz-utils libglu1-mesa
+
+Unduh file:
+	https://flutter.dev/docs/get-started/install/linux
+
+Ekstrak:
+	$ /apps/ tar xf /Downloads/flutter_linux_1.22.0-stable.tar.xz
+
+Tambahkan path:
+	$ nano ~/.bashrc
+	
+	Tambah dipaling bawah:
+	export PATH=$PATH:~/apps/flutter/bin/
+
+Check:
+	$ flutter
+	$ flutter doctor
+
+Referensi:
+	https://www.petanikode.com/flutter-linux/
