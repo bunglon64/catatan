@@ -1,0 +1,135 @@
+VI merupakan kependekan VI IMproved.
+esc digunakan untuk kembali ke normal mode jika memasuki mode lain.
+
+
+### Mode VIM ###
+Normal mode
+Tekan esc untuk masuk ke normal mode jika berada di mode lain
+Merupakan more pertama ketika membuka VIM.
+Dapat melakukan navigasi, penyuntingan(copy, paste).
+
+Insert Mode
+Masuk ke normal lalu tekan "i"
+Dengan mode ini dapat melakukan penulisan dokumen
+
+Visual Mode
+Untuk masuk ke ini harus ke normal mode lalu tekan "v"
+Karena dengan VIM tidak dapat menggunakan mouse, maka pemilihan teks menggunakan mode ini.
+
+Command Mode
+Teknik menggunakan mode ini adalah dengan menekan ecs lalu diikuti karakter : dan mode "esc, :mode"
+:q!	= paksa keluar tanpa save
+:q	= keuar dengan save
+:w	= write
+:wq	= write quit
+
+
+### Membuat dan menulis file dengan VIM ###
+Membuat file dilakukan dengan memanggil vim lalu diikuti dengan nama file baru
+Untuk membuka file dengan memenggil vim lalu diikuti nama file yang sudah ada
+Bila VIM sudah terbuka dan ingin membuka file yang belum dibuka dapat dengan esc, :edit nama file
+
+
+### Mengenal navigasi pada vim ###
+Semua navigasi hanya dapat dilakukan pada mode normal
+
+Navigasi dasar memindahkan krusor
+h	= memindahkan krusor ke kiri
+j	= memindahkan krusor ke bawah
+k 	= memindahkan krusor ke atas
+l	= memindahkan krusor ke kanan
+Juga dapat menggunakan navigasi panah.
+
+Navigasi kalimat
+0	= ke awal baris
+$	= ke akhir baris
+
+Navigasi kata
+b	= pindah huruf pertama dari kata dipilih
+w	= pindah huruf pertama dari kata berikutnya
+e	= pindah huruf terakhir dari kata dipilih
+
+Navigasi jendela
+Navigasi ini digunakan untuk memindahkan crusor relatif terhadap jendela vim.
+Ada 3  posisi relatif: atas, tengah, bawah.
+H	= atas
+L	= bawah
+M	= tengah
+
+Scrolling
+Ada 2 scrolling pada vim. Scrolling satu halaman penuh dan scrolling setengah halaman.
+ctrl + f	= scroll satu halaman ke atas
+ctrl + b	= scroll satu halaman ke bawah
+ctrl + u 	= scrool setengah halaman ke atas
+ctrl + d	= scrool setengah halaman ke bawah
+
+Tambahan
+gg	= melompat ke awal file
+G	= melompat ke akhir file
+
+
+### Mengenal copy, cut, paste, undo, redo pada vim ###
+Istilah copy pada vim dikenal dengan yeng
+y	= copy
+p	= paste
+d	= cut / delete
+
+u	= undo
+ctrl+r	= redo
+
+
+### Pencarian teks pada vim ###
+Menggunakan mode normal
+Dengan karakter / dikuti kata yang dicari dan diakhiri tombol enter
+n	= untuk pencarian berikutnya
+N	= untuk pencarian sebelumnya
+
+pencarian berdasarkan kata yang ditunjuk crussor
+shift+*	= pencarian kata ke depan
+shift+#	= pencarian kata ke belakang
+
+mengaktifkan dan menatikan hight light pada kata tertunjuk crussor
+:set hlsearch
+:set nohlsearch
+
+pencarian incremantal, yaitu sebelum menekan enter sudah mencari
+:set incsearch
+
+
+### Mengenal konfigurasi pada vim ###
+Konfigurasi disini adalah yang dapat di lakukan pada mode command
+
+:set number	= menampilkan line number
+:set nonumber	= menghilangkan line numer
+
+:set relativenumber
+:set norelativenumber
+
+Line pada crusor
+:set cursorline
+:set nocursorline
+
+Tulisan mode ketika berganti
+:set showmode
+:set noshowmode
+
+Melihat visual tanda
+:set visualbel
+
+Fitur syntah high lighting
+:syntax on
+:syntax off
+
+Tema warna / color scheme
+:colorscheme default
+:colorscheme desert
+
+
+### Menyimpan konfigurasi vim dengan vimrc ###
+VIM
+Dengan mengedit file konfigurasi vim
+cari dengan 'locate vimrc'
+
+NVIM
+Biasanya ada di file nvim
+Dapat diarahkan meneggunakan config vim, caranya menulis di file config nvim "source direktori_vimrc"
