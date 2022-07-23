@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <center style="">
+        <h1>Comingsoon :)</h1>
+    </center>
 </body>
 
 </html>
