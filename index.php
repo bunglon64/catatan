@@ -9,16 +9,9 @@
 </head>
 
 <body>
+    <h1>Catatan saya</h1>
     <ul>
-        <h1>Linux</h1>
-        <?php
-        $dir    = 'linux';
-        $files = scandir($dir);
-        foreach ($files as $file) {
-        ?>
-             <a href="https://catatan-tri.herokuapp.com/linux/<?php echo ($file); ?>" target="blank"><li><?php echo ($file); ?></li></a>
-        <?php
-        } ?>
+        <li><a href="linux/index.php">Linux</a></li>
     </ul>
 </body>
 
