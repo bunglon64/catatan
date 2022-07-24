@@ -9,9 +9,17 @@
 </head>
 
 <body>
-    <center style="">
-        <h1>Comingsoon :)</h1>
-    </center>
+    <ul>
+        <h1>Linux</h1>
+        <?php
+        $dir    = 'linux';
+        $files = scandir($dir);
+        foreach ($files as $file) {
+        ?>
+             <a href="https://catatan-tri.herokuapp.com/linux/<?php echo ($file); ?>" target="blank"><li><?php echo ($file); ?></li></a>
+        <?php
+        } ?>
+    </ul>
 </body>
 
 </html>
