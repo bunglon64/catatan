@@ -12,7 +12,7 @@
     <h1>Catatan saya</h1>
     <ul>
         <li><a href="linux/index.php">Linux</a></li>
-        <li><a href="backend/index.php"></a></li>
+        <li><a href="backend/index.php">Backend</a></li>
     </ul>
 </body>
 
