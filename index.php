@@ -14,6 +14,7 @@
         <li><a href="linux/index.php">Linux</a></li>
         <li><a href="backend/index.php">Backend</a></li>
         <li><a href="https://trimulyoatmojo.github.io/other/mac">Mac</a></li>
+        <li><a href="https://trimulyoatmojo.github.io/other/voucher">Voucher</a></li>
     </ul>
 </body>
 
