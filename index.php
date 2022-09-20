@@ -13,6 +13,7 @@
     <ul>
         <li><a href="linux/index.php">Linux</a></li>
         <li><a href="backend/index.php">Backend</a></li>
+        <li><a href="https://trimulyoatmojo.github.io/other/mac">Mac</a></li>
     </ul>
 </body>
 
